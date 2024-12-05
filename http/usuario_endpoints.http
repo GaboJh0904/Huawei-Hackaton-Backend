@@ -1,0 +1,54 @@
+### Obtener todos los usuarios
+GET http://127.0.0.1:8000/usuarios/
+Content-Type: application/json
+
+###
+
+### Obtener un usuario por ID
+GET http://127.0.0.1:8000/usuarios/1
+Content-Type: application/json
+
+###
+
+### Obtener un usuario por username
+GET http://127.0.0.1:8000/usuarios/search/testuser
+Content-Type: application/json
+
+###
+
+### Crear un nuevo usuario con contraseña cifrada
+POST http://127.0.0.1:8000/usuarios/
+Content-Type: application/json
+
+{
+  "username": "newuser",
+  "password": "1234",
+  "persona_id": 2
+}
+
+###
+
+### Actualizar la contraseña de un usuario
+PUT http://127.0.0.1:8000/usuarios/1
+Content-Type: application/json
+
+{
+  "password": "newsecurepassword"
+}
+
+###
+
+### Actualizar un usuario
+PUT http://127.0.0.1:8000/usuarios/1
+Content-Type: application/json
+
+{
+  "username": "updateduser",
+  "password": "newpassword"
+}
+
+###
+
+### Eliminar un usuario
+DELETE http://127.0.0.1:8000/usuarios/1
+Content-Type: application/json

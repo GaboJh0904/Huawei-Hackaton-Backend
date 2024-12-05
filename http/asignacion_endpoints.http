@@ -1,0 +1,39 @@
+### Obtener todas las asignaciones
+GET http://127.0.0.1:8000/asignaciones/
+Content-Type: application/json
+
+###
+
+### Obtener una asignación por ID
+GET http://127.0.0.1:8000/asignaciones/1
+Content-Type: application/json
+
+###
+
+### Crear una nueva asignación
+POST http://127.0.0.1:8000/asignaciones/
+Content-Type: application/json
+
+{
+  "fecha_asignacion": "2024-12-01",
+  "usuario_id": 2,
+  "tarea_id": 2
+}
+
+###
+
+### Actualizar una asignación
+PUT http://127.0.0.1:8000/asignaciones/1
+Content-Type: application/json
+
+{
+  "fecha_asignacion": "2024-12-02",
+  "usuario_id": 2,
+  "tarea_id": 2
+}
+
+###
+
+### Eliminar una asignación
+DELETE http://127.0.0.1:8000/asignaciones/1
+Content-Type: application/json

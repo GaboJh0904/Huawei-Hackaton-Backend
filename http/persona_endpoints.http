@@ -1,0 +1,35 @@
+### Obtener todas las personas
+GET http://127.0.0.1:8000/personas/
+Content-Type: application/json
+
+###
+
+### Crear una nueva persona
+POST http://127.0.0.1:8000/personas/
+Content-Type: application/json
+
+{
+  "nombre": "Juan Pérez",
+  "email": "juan.perez@example.com",
+  "telefono": "555-1234",
+  "fecha_nacimiento": "1990-01-15"
+}
+
+###
+
+### Actualizar una persona existente
+PUT http://127.0.0.1:8000/personas/1
+Content-Type: application/json
+
+{
+  "nombre": "Juan Actualizado",
+  "email": "juan.actualizado@example.com",
+  "telefono": "555-5678",
+  "fecha_nacimiento": "1990-02-20"
+}
+
+###
+
+### Eliminar una persona
+DELETE http://127.0.0.1:8000/personas/1
+Content-Type: application/json

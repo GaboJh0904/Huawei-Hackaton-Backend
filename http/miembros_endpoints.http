@@ -1,0 +1,39 @@
+### Obtener todos los miembros
+GET http://127.0.0.1:8000/miembros/
+Content-Type: application/json
+
+###
+
+### Obtener un miembro por ID
+GET http://127.0.0.1:8000/miembros/1
+Content-Type: application/json
+
+###
+
+### Crear un nuevo miembro
+POST http://127.0.0.1:8000/miembros/
+Content-Type: application/json
+
+{
+  "usuario_id": 2,
+  "familia_empresa_id": 2,
+  "rol": "miembro"
+}
+
+###
+
+### Actualizar un miembro
+PUT http://127.0.0.1:8000/miembros/1
+Content-Type: application/json
+
+{
+  "usuario_id": 2,
+  "familia_empresa_id": 2,
+  "rol": "admin"
+}
+
+###
+
+### Eliminar un miembro
+DELETE http://127.0.0.1:8000/miembros/1
+Content-Type: application/json

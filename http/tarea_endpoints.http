@@ -1,0 +1,49 @@
+### Obtener todas las tareas
+GET http://127.0.0.1:8000/tareas/
+Content-Type: application/json
+
+###
+
+### Obtener una tarea por ID
+GET http://127.0.0.1:8000/tareas/1
+Content-Type: application/json
+
+###
+
+### Crear una nueva tarea
+POST http://127.0.0.1:8000/tareas/
+Content-Type: application/json
+
+{
+  "nombre": "Revisar reporte",
+  "descripcion": "Revisar y enviar el reporte semanal",
+  "estado": "pendiente",
+  "prioridad": "alta",
+  "fecha_creacion": "2024-12-01",
+  "fecha_fin": "2024-12-05",
+  "tablero_id": 4,
+  "categoria_id": 1
+}
+
+###
+
+### Actualizar una tarea
+PUT http://127.0.0.1:8000/tareas/1
+Content-Type: application/json
+
+{
+  "nombre": "Revisar reporte actualizado",
+  "descripcion": "Revisar el reporte actualizado y enviarlo",
+  "estado": "en_progreso",
+  "prioridad": "media",
+  "fecha_creacion": "2024-12-01",
+  "fecha_fin": "2024-12-07",
+  "tablero_id": 4,
+  "categoria_id": 1
+}
+
+###
+
+### Eliminar una tarea
+DELETE http://127.0.0.1:8000/tareas/1
+Content-Type: application/json

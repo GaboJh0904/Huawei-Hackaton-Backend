@@ -1,0 +1,19 @@
+### Login con credenciales correctas
+POST http://127.0.0.1:8000/auth/login
+Content-Type: application/json
+
+{
+  "username": "newuser",
+  "password": "1234"
+}
+
+###
+
+### Login con credenciales incorrectas
+POST http://127.0.0.1:8000/auth/login
+Content-Type: application/json
+
+{
+  "username": "newuser",
+  "password": "wrongpassword"
+}

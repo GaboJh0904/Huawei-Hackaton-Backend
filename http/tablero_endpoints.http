@@ -1,0 +1,41 @@
+### Obtener todos los tableros
+GET http://127.0.0.1:8000/tableros/
+Content-Type: application/json
+
+###
+
+### Obtener un tablero por ID
+GET http://127.0.0.1:8000/tableros/1
+Content-Type: application/json
+
+###
+
+### Crear un nuevo tablero
+POST http://127.0.0.1:8000/tableros/
+Content-Type: application/json
+
+{
+  "nombre": "Proyecto Alpha",
+  "descripcion": "Tablero principal del proyecto Alpha",
+  "fecha_creacion": "2024-01-01",
+  "familia_empresa_id": 2
+}
+
+###
+
+### Actualizar un tablero
+PUT http://127.0.0.1:8000/tableros/3
+Content-Type: application/json
+
+{
+  "nombre": "Proyecto Beta",
+  "descripcion": "Actualización del tablero Beta",
+  "fecha_creacion": "2024-02-01",
+  "familia_empresa_id": 2
+}
+
+###
+
+### Eliminar un tablero
+DELETE http://127.0.0.1:8000/tableros/3
+Content-Type: application/json

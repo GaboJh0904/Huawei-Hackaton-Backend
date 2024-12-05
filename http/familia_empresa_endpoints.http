@@ -1,0 +1,39 @@
+### Obtener todas las familias/empresas
+GET http://127.0.0.1:8000/familias_empresas/
+Content-Type: application/json
+
+###
+
+### Obtener una familia/empresa por ID
+GET http://127.0.0.1:8000/familias_empresas/1
+Content-Type: application/json
+
+###
+
+### Crear una nueva familia/empresa
+POST http://127.0.0.1:8000/familias_empresas/
+Content-Type: application/json
+
+{
+  "nombre": "Familia Pérez",
+  "detalle": "Una familia unida",
+  "fecha_creacion": "2024-01-01"
+}
+
+###
+
+### Actualizar una familia/empresa
+PUT http://127.0.0.1:8000/familias_empresas/1
+Content-Type: application/json
+
+{
+  "nombre": "Familia Pérez Actualizada",
+  "detalle": "Detalles modificados",
+  "fecha_creacion": "2024-02-01"
+}
+
+###
+
+### Eliminar una familia/empresa
+DELETE http://127.0.0.1:8000/familias_empresas/1
+Content-Type: application/json

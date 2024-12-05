@@ -1,0 +1,35 @@
+### Obtener todas las categorías
+GET http://127.0.0.1:8000/categorias/
+Content-Type: application/json
+
+###
+
+### Obtener una categoría por ID
+GET http://127.0.0.1:8000/categorias/1
+Content-Type: application/json
+
+###
+
+### Crear una nueva categoría
+POST http://127.0.0.1:8000/categorias/
+Content-Type: application/json
+
+{
+  "categoria": "Desarrollo"
+}
+
+###
+
+### Actualizar una categoría
+PUT http://127.0.0.1:8000/categorias/1
+Content-Type: application/json
+
+{
+  "categoria": "Actualización"
+}
+
+###
+
+### Eliminar una categoría
+DELETE http://127.0.0.1:8000/categorias/1
+Content-Type: application/json

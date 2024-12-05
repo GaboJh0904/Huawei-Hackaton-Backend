@@ -1,0 +1,41 @@
+### Obtener todos los comentarios
+GET http://127.0.0.1:8000/comentarios/
+Content-Type: application/json
+
+###
+
+### Obtener un comentario por ID
+GET http://127.0.0.1:8000/comentarios/1
+Content-Type: application/json
+
+###
+
+### Crear un nuevo comentario
+POST http://127.0.0.1:8000/comentarios/
+Content-Type: application/json
+
+{
+  "comentario": "Muy buen trabajo!",
+  "fecha_creacion": "2024-12-01",
+  "usuario_id": 2,
+  "tarea_id": 2
+}
+
+###
+
+### Actualizar un comentario
+PUT http://127.0.0.1:8000/comentarios/3
+Content-Type: application/json
+
+{
+  "comentario": "Actualizado: Excelente trabajo!",
+  "fecha_creacion": "2024-12-02",
+  "usuario_id": 2,
+  "tarea_id": 2
+}
+
+###
+
+### Eliminar un comentario
+DELETE http://127.0.0.1:8000/comentarios/3
+Content-Type: application/json
